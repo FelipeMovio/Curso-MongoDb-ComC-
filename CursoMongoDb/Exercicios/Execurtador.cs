@@ -4,7 +4,7 @@
     {
         public static void Executar()
         {
-            Program_2_4.Executar();
+            Program_2_5.Executar();
         }
     }
 }

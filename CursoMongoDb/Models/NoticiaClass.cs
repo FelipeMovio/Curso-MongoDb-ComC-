@@ -1,4 +1,6 @@
-﻿namespace CursoMongoDb.Models;
+﻿using Newtonsoft.Json;
+
+namespace CursoMongoDb.Models;
 
 public class NoticiaClass
 {
@@ -16,5 +18,9 @@ public class NoticiaClass
     public int TempoMedioLeitura { get; set; }
 
 
+    public string ToJson()
+    {
+        return JsonConvert.SerializeObject(this,Formatting.Indented);
+    }
 
 }
